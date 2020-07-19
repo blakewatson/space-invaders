@@ -4,6 +4,7 @@ body {
   align-items: center;
   margin: 0;
   min-height: 100vh;
+  font-family: sans-serif;
   background-color: #111;
 }
 
@@ -23,4 +24,11 @@ canvas {
 
 canvas:hover {
   cursor: none;
+}
+
+#github {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #c186ff;
 }
