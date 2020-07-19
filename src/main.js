@@ -19,16 +19,12 @@ init();
 document.querySelector('#board').appendChild(globals.renderer.view);
 
 // init game state on restart
-let stopLoop = false;
-window.addEventListener('restart-game', () => {
-  init();
-});
+window.addEventListener('restart-game', init);
   
 // kickoff game loop
 requestAnimationFrame(loop);
 
 function loop(ms) {
-  if (stopLoop) return;
   requestAnimationFrame(loop);
 
   const t = ms / 1000;
@@ -89,7 +85,7 @@ function init() {
   if (!globals.last) {
     globals.last = 0;
   }
-  
+
   globals.gameover = false;
   
   // console.log(globals.ship.hp);
