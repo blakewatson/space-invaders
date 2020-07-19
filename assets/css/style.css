@@ -1,0 +1,26 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  min-height: 100vh;
+  background-color: #111;
+}
+
+#board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+canvas {
+  width: 480px;
+  height: 640px;
+  box-shadow: 0 0 30px #000;
+  /*border: 10px solid #a553ff;*/
+  background-color: #000;
+}
+
+canvas:hover {
+  cursor: none;
+}
